@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.template.response import TemplateResponse
 
-def auth_view(request):
-    return HttpResponse('AUTH')
+def login_cust(request):
+    return TemplateResponse(request, 'login.html')
